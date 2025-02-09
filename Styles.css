@@ -1,0 +1,184 @@
+
+nav{
+    background-color: #fff !important;
+    text-align: center;
+}
+.navbar-toggler,.navbar-toggler:focus,
+.navbar-toggler:active {
+    box-shadow: none !important;
+    outline: none !important;
+}
+.hero{
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 10%;
+    margin-top: 3%;
+}
+.hero-item img{
+    width: 100%;
+    border-radius: 20px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    justify-content: center;
+}
+
+.nav-link{
+    font-weight: bold;
+    color: #120857 !important;
+}
+
+.nav-link:hover{
+    color: #EEA707 !important;
+}
+.Download{
+    font-weight: bold;
+    background-color: #120857;
+    text-decoration: none;
+    position: relative;
+    top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+.Download:hover{
+    background-color: #555353;
+    color: #fff;
+}
+.DownloadApp{
+    font-weight: bold;
+    background-color: #120857;
+    text-decoration: none;
+    position: relative;
+    top: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    color: #EEA707;
+    width: 50%;
+    text-align: center;
+}
+.DownloadApp:hover{
+    background-color: #555353;
+    color: #fff;
+}
+.hero h2{
+    color: #120857;
+    font-weight: bolder;
+}
+.hero p{
+    color: #555353;
+    font-weight: bold;
+}
+
+
+
+.about{
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 10%;
+    margin-top: 10%;
+}
+.about-item img{
+    width: 100%;
+    border-radius: 20px;
+}
+.about h2{
+    color: #EEA707;
+    font-weight: bolder;
+}
+.about p{
+    color: #555353;
+    font-weight: bold;
+}
+.services{
+    width: 80%;
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    gap: 20px 2%;
+    margin-top: 3%;
+}
+
+.service{
+    padding: 20px 0 10px;
+    background-color: #dfdddd;
+    color: #120857;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.serviceTitle{
+    color: #EEA707;
+    font-weight: bold;
+}
+
+footer{
+    width: 100%;
+    background-color: #f5f5f5;
+    margin-top: 5%;
+    border-radius: 50px 50px 0 0;
+    padding-top: 5%;
+}
+.footercontent{
+    display: grid;
+    grid-template-columns:1.5fr 1.5fr;
+    width: 90%;
+    gap: 5%;
+}
+
+h4{
+    color: #EEA707;
+    font-weight: bold;
+}
+.footercontent a{
+    background-color: #120857;
+    color: #EEA707;
+    padding: 10px;
+    width: 30%;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+}
+@media screen and (max-width:1020px) {
+    .hero{
+        grid-template-columns: auto;
+        margin-top: 13%;
+    }
+    .text{
+        text-align: center;
+    }
+    .DownloadApp{
+        width: 100%;
+        text-align: center !important;
+    }
+    .about{
+        grid-template-columns: auto;
+        margin-top: 20%;
+    }
+    .services{
+        grid-template-columns:  auto auto;
+        margin-top: 5%;
+    }
+    .serviceTitle{
+        margin-top: 20%;
+    }
+    .footercontent{
+        grid-template-columns: auto;
+        padding: 3% 0 ;
+    }
+    .footercontent a{
+        width: 100%;
+    }
+}
+@media screen and (max-width:600px){
+    .hero{
+        margin-top: 20% !important;
+    }
+}
+@media screen and (max-width:600px){
+    .hero{
+        margin-top: 30% !important;
+    } 
+}

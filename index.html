@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D8HousingSolution</title>
+    <link rel="icon" href="./images/icon.jpg" type="image/jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="./images/logo.png" alt="D8HousingSolution" width="100px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#About">About</a>
+              </li>
+              <li class="nav-item me-3">
+                <a class="nav-link" href="#Services">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="Download" href="#" onclick="autoDownload()" ><i class="fa-solid fa-download" ></i> Download App</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <center style="margin-top:9% ;">
+        <div class="hero">
+            <div class="hero-item text">
+                <h2>One App, All Home Services! Get D8HousingSolution Today!</h2>
+                <p>Need expert home services? D8HousingSolution provides plumbing, electrical, painting, carpentry, welding, and more. Download the app now to place your order easily.</p>
+                <a class="DownloadApp" href="#" onclick="autoDownload()" ><i class="fa-solid fa-download"></i> Download App</a>
+            </div>
+            <div class="hero-item">
+              <img src="./images/hero.jpg" alt="">
+            </div>
+        </div>
+    </center>
+    <center>
+      <div class="about" id="About">
+        <div class="about-item">
+          <img src="./images/Aboutus.jpg" alt="">
+        </div>
+          <div class="about-item text">
+              <h2>About Us</h2>
+              <p>D8HousingSolution is your trusted partner for all home service needs, including plumbing, electrical work, painting, carpentry, welding, and more. We ensure quality, reliability, and customer satisfaction. With skilled professionals, we deliver efficient solutions. Download our app to book services instantly.</p>
+          </div>
+      </div>
+  </center>
+  <center style="margin-top: 7%;" id="Services">
+    <h2 class="serviceTitle">Services</h2>
+    <div class="services">
+        <div class="service">
+          <p>Plumbing</p>
+        </div>
+        <div class="service">
+          <p>Electrical</p>
+        </div>
+        <div class="service">
+          <p>Painting</p>
+        </div>
+        <div class="service">
+          <p>Carpenting</p>
+        </div>
+        <div class="service">
+          <p>Tiles</p>
+        </div>
+        <div class="service">
+          <p>Mesan</p>
+        </div>
+        <div class="service">
+          <p>Welding</p>
+        </div>
+        <div class="service">
+          <p>Relatable Works</p>
+        </div>
+    </div>
+  </center>
+  <footer>
+    <center>
+      <div class="footercontent">
+        <div class="footer-item text">
+          <h4>D8 Housing Solution</h4>
+          <p>D8HousingSolution, a Coimbatore, Tamil Nadu-based company, provides expert home services, including plumbing, electrical, painting, carpentry, welding, and more. We ensure quality and reliability. Download our app now to book professional services easily.</p>
+          <a  href="tel:9043588817"><i class="fa-solid fa-phone"></i> 9043588817</a>
+        </div>
+        <div class="footer-item">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3915.7201882298864!2d76.93836807504603!3d11.059592789106892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDAzJzM0LjUiTiA3NsKwNTYnMjcuNCJF!5e0!3m2!1sen!2sin!4v1739076750678!5m2!1sen!2sin" width="100%" height="400px" style="border:0;border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </center>
+  </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+  function autoDownload() {
+      var apkPath = "https://drive.google.com/file/d/1mHTCxrqM5lMWNrtMohaOadj16Divhg8l/view?usp=sharing"; // Path to the APK file
+      var link = document.createElement("a");
+      link.href = apkPath;
+      link.download = "D8HousingSolution.apk"; // Ensure file is downloaded with this name
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+  }
+</script>
+
+</html>
